@@ -54,3 +54,27 @@
   padding: 0 15px;
 }
 }
+
+
+.navmenu{
+  position:relative;
+
+}
+.navmenu::after{
+ position:absolute;
+ content:"";
+  width:0%;
+  height:2px;
+  background-color:var(--color-text_three_color);
+  bottom:-5px;
+  left:0;
+  opacity:0;
+  transition:all 0.3s ease;
+
+   
+}
+
+.navmenu:hover::after{
+  opacity:1;
+  width:100%;
+}
